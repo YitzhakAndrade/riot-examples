@@ -1,0 +1,21 @@
+{
+  "name": "riot-examples-example1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify scripts/main.js -o scripts/bundle.js",
+    "bundle-debug": "browserify scripts/main.js -o scripts/bundle.js -d",
+    "bundle-watch": "watchify scripts/main.js -o scripts/bundle.js -d -v"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0"
+  }
+}

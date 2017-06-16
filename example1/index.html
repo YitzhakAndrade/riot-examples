@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello riot!</title>
+
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+
+	<script src="scripts/bundle.js"></script>
+</head>
+<body>
+
+	<div class="container">
+
+		<h1>Hello riot!</h1>
+		<p>I realy don't know what to write here.</p>
+
+		<!-- place the custom tag anywhere inside the body -->
+		<custom-tag-example></custom-tag-example>
+
+		<!-- include the tag -->
+		<script type="riot/tag" src="riot-tags/custom-tag-example.tag"></script>
+
+		<!-- include riot.js -->
+		<script src="https://cdn.jsdelivr.net/npm/riot@3.6/riot+compiler.min.js"></script>
+
+		<!-- mount the tag -->
+		<script>
+		    $(function () {
+		        riot.mount('custom-tag-example', {
+		            items: [{}]
+		        })
+		    })
+		</script>
+
+	</div>
+
+</body>
+</html>
