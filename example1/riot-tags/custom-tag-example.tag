@@ -85,8 +85,9 @@
 
     search(e) {
       e.preventDefault()
-      var idontknow = this.refs.idontknow.value
-      alert(idontknow)
+      alert('not implemented')
+      //var idontknow = this.refs.idontknow[0].value
+      //alert(idontknow)
     }
   </script>
 
